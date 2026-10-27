@@ -1,0 +1,967 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Mr.A">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Mr.A">
+<meta property="og:url" content="https://chelylee.github.io/page/4/index.html">
+<meta property="og:site_name" content="Mr.A">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Mr.A">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Mr.A</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"chelylee.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Mr.A</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="欢迎你朋友，这里是Mr.A在互联网世界的影分身"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/05/17/%E5%A4%A7%E7%8E%8B%E6%B4%BE%E6%88%91%E6%9D%A5%E7%A7%8D%E8%8D%89/index/" target="_self">
+          大王派我来种草
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/05/17/%E5%A4%A7%E7%8E%8B%E6%B4%BE%E6%88%91%E6%9D%A5%E7%A7%8D%E8%8D%89/index/" target="_self">
+        <div>
+          最近真是各种想剁手啊。 媳妇吃饭看中一杯子，我看帖中了精酿啤酒的毒。不过这几天深圳下雨有点降温，小风吹着有点凉，等过了这几天天气转热了我就要剁手了！因为我自己一直对酒不感兴趣，白的太辣，啤的嫌苦。我从小就对有苦味、涩味的东西特反感，所以白酒我是一滴都不碰，啤酒有时还能喝点。话说回来想起当初刚毕业那会跟老板去出差，吃饭的时候我一不喝酒的还挺尴尬。至于洋酒因为小时候那会根本接触不到，现在对这玩意也不怎
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-05-17 00:00" pubdate>
+              2016-05-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/bzsy/" class="category-chain-item">bzsy</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%94%B5%E4%BF%A1/">#电信</a>
+            
+              <a href="/tags/%E7%A7%8D%E8%8D%89/">#种草</a>
+            
+              <a href="/tags/%E7%B2%BE%E9%85%BF%E5%95%A4%E9%85%92/">#精酿啤酒</a>
+            
+              <a href="/tags/%E8%90%A4%E7%9F%B3%E4%BA%91/">#萤石云</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/05/16/%E6%B2%A1%E6%83%B3%E5%A5%BD%E5%95%A5%E9%A2%98%E7%9B%AE/index/" target="_self">
+          没想好啥题目
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/05/16/%E6%B2%A1%E6%83%B3%E5%A5%BD%E5%95%A5%E9%A2%98%E7%9B%AE/index/" target="_self">
+        <div>
+          这几天赚了点外快，弄了台电脑，果然还是大屏幕爽啊，虽然只有24寸。导致现在有点后悔，应该直接上27寸的。 前几天家里给宝贝闺女摆了满月酒，那天正好是我哥生日，他专门跑来送了一对银手镯，很漂亮，也很有份量。可惜就是跟送的小鞋子一样太大了，戴上去一摆手就掉了哈哈哈。哥俩喝了不少出去遛弯，扯了许多蛋，想想这几年的种种，有点心疼他，希望大家一切都好吧。 http://music.163.com/#/son
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-05-16 00:00" pubdate>
+              2016-05-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%83%A1%E6%89%AF/">#胡扯</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/04/27/%E6%8B%9C%E6%8B%9C%E4%BA%86%E5%BF%AB%E7%9B%98/index/" target="_self">
+          拜拜了快盘
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/04/27/%E6%8B%9C%E6%8B%9C%E4%BA%86%E5%BF%AB%E7%9B%98/index/" target="_self">
+        <div>
+          今天无聊看了眼推特，偶然看到了月光博客说金山快盘因为整治网盘的行动而即将关闭，个人数据只保留到6月30日，让人很蛋疼。我记不清是什么时候开始使用快盘了，但看到快盘即将关闭转型个人视频服务时，不禁有点忧伤。为啥呢？因为又特么要重新找替代软件了。。 http://music.163.com/#/song?id=391104 在我印象里快盘也是网盘，但跟百度网盘、360云盘、115网盘的作用却不太相同，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-04-27 00:00" pubdate>
+              2016-04-27
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%BF%AB%E7%9B%98/">#快盘</a>
+            
+              <a href="/tags/%E7%BD%91%E7%9B%98/">#网盘</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/04/21/%E4%B8%80%E7%99%BE%E4%B8%87/index/" target="_self">
+          一百万
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/04/21/%E4%B8%80%E7%99%BE%E4%B8%87/index/" target="_self">
+        <div>
+          今天在群里看他们一直在聊人口红利、各行业利润、自己钱不够花之类的话题。刚才跟朋友微信又说道网游坑钱，她说她在页游充了十块钱就打到了服务器前十，再充个几十块应该就能打到前三了，但是想到剑三充的50块还没玩完，就舍不得再花钱了，一个大写的穷。哎，看来钱不够花是每个人都会遇到的问题啊？紧接着突然就想到陈升这首一百万了，假如能突然多个100万，那估计能解决我们目前遇到的大多数问题了。 http://www
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-04-21 00:00" pubdate>
+              2016-04-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%80%E7%99%BE%E4%B8%87/">#一百万</a>
+            
+              <a href="/tags/%E6%97%85%E6%B8%B8/">#旅游</a>
+            
+              <a href="/tags/%E9%85%92/">#酒</a>
+            
+              <a href="/tags/%E9%92%B1/">#钱</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/04/13/%E5%A6%99%E4%B8%8D%E5%8F%AF%E8%A8%80/index/" target="_self">
+          妙不可言
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/04/13/%E5%A6%99%E4%B8%8D%E5%8F%AF%E8%A8%80/index/" target="_self">
+        <div>
+          有时候吧，世界上有些事情真的是妙不可言。 为啥这么说呢？因为这两天突然发现手机便签里还记录过这么个流水账。  上次已经说过了，我闺女12点11分出生的。 最近一直忙着照顾小家伙，可谓痛并快乐着，因为夜里经常要起夜给她换尿片、喂奶，最近的精神状态也差的要死。但是每次抱她的时候都感觉特幸福，心里老是会想：她怎么能这么可爱的？   这几天被家里同学刷屏了，因为我们那莫名其妙的搞了个几千亩油菜花地，朋友圈
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-04-13 00:00" pubdate>
+              2016-04-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%AE%B6%E4%B9%A1/">#家乡</a>
+            
+              <a href="/tags/%E5%8F%AF%E7%88%B1/">#可爱</a>
+            
+              <a href="/tags/%E5%A5%87%E5%A6%99/">#奇妙</a>
+            
+              <a href="/tags/%E6%B2%B9%E8%8F%9C%E8%8A%B1/">#油菜花</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/03/24/%E6%88%91%E5%8D%87%E7%BA%A7%E4%BA%86/index/" target="_self">
+          我升级了
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/03/24/%E6%88%91%E5%8D%87%E7%BA%A7%E4%BA%86/index/" target="_self">
+        <div>
+          这一切来的实在太突然了！昨天，也就是2016年3月23日中午12点11分，老婆帮我生了一个5斤8两的小姑娘，我成功升级当爸爸了！    到现在我都不知道昨天都是怎么过来的，只记得一些大概，细节一点的事情真是转身就忘。本来昨天早上是孕晚期例行一周一次的产检，结果胎心监测时医生说有波动，必须马上办理住院。一边安慰已经被吓哭的老婆，一边找急忙慌的办理住院手续，一到产科立马被医生护士围成一圈，又重新开始胎
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-03-24 00:00" pubdate>
+              2016-03-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/yxeg/bzsy/" class="category-chain-item">bzsy</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8C%BB%E9%99%A2/">#医院</a>
+            
+              <a href="/tags/%E5%AE%9D%E5%AE%9D/">#宝宝</a>
+            
+              <a href="/tags/%E7%88%B8%E7%88%B8/">#爸爸</a>
+            
+              <a href="/tags/%E5%8D%87%E7%BA%A7/">#升级</a>
+            
+              <a href="/tags/%E5%A6%88%E5%A6%88/">#妈妈</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/03/22/%E6%88%91%E4%BB%AC%E7%9A%84%E5%BE%81%E9%80%94%E6%98%AF%E7%9F%B3%E6%B2%89%E5%A4%A7%E6%B5%B7/index/" target="_self">
+          我们的征途是石沉大海
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/03/22/%E6%88%91%E4%BB%AC%E7%9A%84%E5%BE%81%E9%80%94%E6%98%AF%E7%9F%B3%E6%B2%89%E5%A4%A7%E6%B5%B7/index/" target="_self">
+        <div>
+          这几天朋友圈里刷的最火的估计就是问题疫苗的新闻了，这让马上升级孩儿他爸的我异常担惊受怕。我不去想犯罪分子怎么做这么大生意、有没有保护伞，我就想知道以后我的孩子接种疫苗去哪才放心？接种的疫苗有没有问题？毕竟问题疫苗也涉及到广东省内，老婆最近就要生了，将来给小孩打各种疫苗的时候怎么办？各种各样的疫苗选择本身就够费劲的，现在还要担心疫苗是不是有问题，心好累。下午看到丁香医生、丁香妈妈对问题疫苗的推送文章
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-03-22 00:00" pubdate>
+              2016-03-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/bzsy/" class="category-chain-item">bzsy</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/bzsy/%E6%AC%B2%E5%93%AD%E6%97%A0%E6%B3%AA/" class="category-chain-item">欲哭无泪</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%B7%E5%8D%95/">#刷单</a>
+            
+              <a href="/tags/%E5%A4%96%E5%8D%96/">#外卖</a>
+            
+              <a href="/tags/%E7%96%AB%E8%8B%97/">#疫苗</a>
+            
+              <a href="/tags/%E9%A5%BF%E4%BA%86%E4%B9%88/">#饿了么</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/03/17/%E6%AF%94%E9%81%87%E4%B8%8A%E4%B8%80%E4%B8%AA%E5%82%BB%E9%80%BC%E6%9B%B4%E7%94%9F%E6%B0%94%E7%9A%84%E6%98%AF%E6%B2%A1%E6%B3%95%E6%8D%A2%E6%8E%89%E8%BF%99%E4%B8%AA%E5%82%BB%E9%80%BC/index/" target="_self">
+          比遇上一个傻逼更生气的是没法换掉这个傻逼
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/03/17/%E6%AF%94%E9%81%87%E4%B8%8A%E4%B8%80%E4%B8%AA%E5%82%BB%E9%80%BC%E6%9B%B4%E7%94%9F%E6%B0%94%E7%9A%84%E6%98%AF%E6%B2%A1%E6%B3%95%E6%8D%A2%E6%8E%89%E8%BF%99%E4%B8%AA%E5%82%BB%E9%80%BC/index/" target="_self">
+        <div>
+          上周老大让我做个1F广播更改方案，一听做这破玩意我就挺恼火，早他妈管着干嘛了？这么说不是我不想做事，而是公司做事的时候都是一拍脑门就干了，都不过过脑子。 首先施工要有个项目负责人吧？用人不疑疑人不用，改装时大领导不相信深圳公司的人，专门从上海公司派了几个人过来，说是有经验，专业人才。但是他不了解深圳这边的情况啊，那这样深圳公司是不是考虑要有个负责人来进行沟通协调？有这么一个人负责对接，在分派工作，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-03-17 00:00" pubdate>
+              2016-03-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/bzsy/" class="category-chain-item">bzsy</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/bzsy/%E6%AC%B2%E5%93%AD%E6%97%A0%E6%B3%AA/" class="category-chain-item">欲哭无泪</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B7%A5%E4%BD%9C/">#工作</a>
+            
+              <a href="/tags/%E5%82%BB%E9%80%BC/">#傻逼</a>
+            
+              <a href="/tags/%E5%B9%BF%E6%92%AD/">#广播</a>
+            
+              <a href="/tags/%E6%96%B9%E6%A1%88/">#方案</a>
+            
+              <a href="/tags/%E6%96%BD%E5%B7%A5/">#施工</a>
+            
+              <a href="/tags/%E8%AE%BE%E8%AE%A1/">#设计</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2016/03/03/%E8%BF%99%E6%98%AF%E4%B8%80%E6%AC%A1%E4%BF%AE%E8%A1%8C/index/" target="_self">
+          这是一次修行
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2016/03/03/%E8%BF%99%E6%98%AF%E4%B8%80%E6%AC%A1%E4%BF%AE%E8%A1%8C/index/" target="_self">
+        <div>
+          贴膜已经到货！！！    药药切克闹，这次仔细看了下，明显跟上次发的不一样，对比之前的边框比要窄，光线传感器开孔也比之前大，看起来比之前那个靠谱，这次一定贴的妥妥的！ 二话不说，揭掉原先的大白边，擦擦屏幕，贴膜对准孔位，使用店家送的贴膜定位神器（就特么俩贴纸）固定好位置，撕掉没用的那层膜往屏幕上一贴，挤挤气泡，屏幕完美。 嗯？上下还有一点，继续挤挤挤，还好都挤掉了。。 嗯？屏幕右边还有？继续挤挤挤
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2016-03-03 00:00" pubdate>
+              2016-03-03
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/yxeg/" class="category-chain-item">yxeg</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%B4%B4%E8%86%9C/">#贴膜</a>
+            
+              <a href="/tags/%E5%9D%91%E7%88%B9/">#坑爹</a>
+            
+              <a href="/tags/%E9%97%B9%E5%BF%83/">#闹心</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/3/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#board">5</a><a class="page-number" href="/page/6/#board">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/#board">9</a><a class="extend next" rel="next" href="/page/5/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
