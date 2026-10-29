@@ -1,37 +1,119 @@
-/* ==========================================
-   1. 文章详情页正文行距优化
-   ========================================== */
-.article-entry, 
-.post-content {
-  /* 行高：推荐 1.8 到 1.85，最适宜中文长文连续阅读 */
-  line-height: 1.85 !important;
-  font-size: 16px !important;
-  color: #2c3e50 !important;
+/* ==========================================================
+   排版优化（覆盖 archer 默认值，custom.css 加载顺序在最后，同权重必胜）
+   原则：只动"版式结构"（列宽/行距/字号/字重/间距/圆角），
+        不写死颜色，深色主题由 dark.css 正常接管
+   ========================================================== */
+
+/* ---------- 1. 正文阅读列宽（文章页）---------- */
+/* archer 文章页 main 占视口 50%，大屏时文字行过长；限制 44rem 并居中 */
+.post-page .article-entry {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 2rem;
 }
 
-/* 正文段落之间的下间距（防止多段文字挤成一团） */
-.article-entry p, 
-.post-content p {
-  margin-top: 0 !important;
-  margin-bottom: 1.4em !important;
+/* ---------- 2. 正文段落 ---------- */
+.post-page .article-entry p {
+  line-height: 1.85;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.2em;
+  text-align: justify;
+  text-justify: inter-ideograph; /* 中文两端对齐更整齐 */
+}
+/* 段落里的引用块/图片自身不受 justify 影响 */
+.post-page .article-entry p:first-child {
+  margin-top: 0;
 }
 
-/* 正文标题与上下正文的间距 */
-.article-entry h1, .article-entry h2, .article-entry h3 {
-  margin-top: 1.8em !important;
-  margin-bottom: 0.8em !important;
-  line-height: 1.4 !important;
+/* ---------- 3. 标题层级节奏 ---------- */
+.post-page .article-entry h1,
+.post-page .article-entry h2,
+.post-page .article-entry h3 {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+.post-page .article-entry h1 {
+  font-size: 1.9rem;
+}
+.post-page .article-entry h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(35, 57, 77, 0.15); /* h2 细分隔线，编辑感 */
+}
+.post-page .article-entry h3 {
+  font-size: 1.25rem;
+}
+.post-page .article-entry :first-child {
+  margin-top: 0;
 }
 
-/* ==========================================
-   2. 首页文章摘要列表行距优化
-   ========================================== */
-.post-excerpt,
-.post-abstract {
-  /* 摘要行高稍紧凑，保持卡片精致度 */
-  line-height: 1.75 !important;
-  font-size: 15px !important;
-  color: #555555 !important;
-  margin-top: 10px !important;
-  margin-bottom: 15px !important;
+/* ---------- 4. 列表 ---------- */
+.post-page .article-entry ul,
+.post-page .article-entry ol {
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+}
+.post-page .article-entry li {
+  margin-bottom: 0.35em;
+  text-align: justify;
+}
+
+/* ---------- 5. 代码块 ---------- */
+.post-page .article-entry pre {
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  font-size: 13.5px;
+  line-height: 1.6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.post-page .article-entry code {
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.post-page .article-entry pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ---------- 6. 图片 ---------- */
+.post-page .article-entry img {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+/* ---------- 7. 引用块 ---------- */
+.post-page .article-entry blockquote {
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  line-height: 1.8;
+  font-size: 0.95em;
+}
+
+/* ---------- 8. 首页卡片摘要 ---------- */
+.index-post .abstract-content p {
+  line-height: 1.8;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+.index-post .abstract-content {
+  letter-spacing: 0.01em;
+}
+
+/* ---------- 9. 移动端微调 ---------- */
+@media (max-width: 960px) {
+  .post-page .article-entry {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+  .post-page .article-entry p {
+    font-size: 16px;
+  }
 }
