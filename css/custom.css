@@ -97,17 +97,58 @@
   font-size: 0.95em;
 }
 
-/* ---------- 8. 首页卡片摘要 ---------- */
-.index-post .abstract-content p {
-  line-height: 1.8;
-  font-size: 15px;
-  margin-bottom: 1em;
-}
-.index-post .abstract-content {
-  letter-spacing: 0.01em;
+/* ---------- 8. 首页：卡片列宽（与文章页阅读列对齐）---------- */
+.index-page .index-post,
+.index-page .index-post-divider,
+.index-page .page-nav {
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ---------- 9. 移动端微调 ---------- */
+/* ---------- 9. 首页：卡片标题 ---------- */
+/* 卡片视觉锚点：更大字距 + 更重字重（Noto Sans SC 仅 300/400/500/700，700 最稳） */
+.index-post .abstract-title .abstract-title-text {
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+/* ---------- 10. 首页：卡片摘要（.abstract-content 是纯文本 div，无 p）---------- */
+.index-post .abstract-content {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 400; /* archer 默认 300（n3）偏飘 */
+  letter-spacing: 0.01em;
+  margin-top: 0.8rem;
+}
+
+/* 卡片元信息行（日期/标签）：字号收一档，更精致 */
+.index-post .abstract-post-meta {
+  font-size: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+/* 卡片内距与卡片间距 */
+.index-post {
+  padding: 1.4rem 1.5rem;
+}
+.index-page .index-post-divider {
+  margin: 0.8rem 0;
+}
+
+/* ---------- 11. 首页：顶部 Hero 标题（Oswald 展示字体，靠字距做高级感）---------- */
+.intro-title {
+  font-size: 3.5rem;
+  letter-spacing: 0.08em;
+}
+.intro-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+}
+
+/* ---------- 12. 移动端微调 ---------- */
 @media (max-width: 960px) {
   .post-page .article-entry {
     padding: 1.5rem 1rem;
@@ -115,5 +156,17 @@
   }
   .post-page .article-entry p {
     font-size: 16px;
+  }
+  /* 首页列宽恢复全宽 */
+  .index-page .index-post,
+  .index-page .index-post-divider,
+  .index-page .page-nav {
+    max-width: 100%;
+  }
+  .intro-title {
+    font-size: 2.6rem;
+  }
+  .intro-subtitle {
+    font-size: 1.1rem;
   }
 }
