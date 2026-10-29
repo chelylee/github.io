@@ -170,3 +170,46 @@
     font-size: 1.1rem;
   }
 }
+
+/* ---------- 13. Hero 背景图通透度 + 底部渐变遮罩（A1）---------- */
+/* archer 默认 brightness(0.5) 压太死，调亮到 0.65 保住背景图细节，
+   再叠加一层底部渐变，标题区可读性与画面通透度兼得 */
+.site-intro-img {
+  filter: brightness(0.65) !important;
+}
+.site-intro-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+}
+
+/* ---------- 14. 首页卡片 hover 反馈（A2）---------- */
+.index-post {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.5s ease-out;
+}
+.index-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- 15. 选区颜色：与 Waline 一致的青绿（A3）---------- */
+::selection {
+  background: #00a86b;
+  color: #fff;
+}
+::-moz-selection {
+  background: #00a86b;
+  color: #fff;
+}
+
+/* ---------- 16. 字体渲染打磨（A5）---------- */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
