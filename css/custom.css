@@ -197,13 +197,13 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* ---------- 15. 选区颜色：与 Waline 一致的青绿（A3）---------- */
+/* ---------- 15. 选区颜色：跟随主题 accent（A3，原 #00a86b 并入 accent 变量）---------- */
 ::selection {
-  background: #00a86b;
+  background: var(--accent, #0d9488);
   color: #fff;
 }
 ::-moz-selection {
-  background: #00a86b;
+  background: var(--accent, #0d9488);
   color: #fff;
 }
 
@@ -212,4 +212,113 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- 17. 主题 accent 统一替换：archer 硬编码红 #f75357 → 青绿（A13）----------
+   archer 的 style.css / dark.css 都硬编码 #f75357；本文件加载在最后，
+   同特异性覆盖 → 亮/暗两种主题同时生效。以后换色只改 --accent 一行。
+   说明：用户站点用 waline，#gitalk-container 相关规则是死代码，跳过；
+        社交图标 hover 是各品牌色，不在 accent 范围内，不动。 */
+:root {
+  --accent: #0d9488; /* 青绿 teal-600；嫌浅可改 #0f766e（teal-700） */
+}
+
+/* 正文/卡片链接 */
+.abstract-content a,
+.article-entry a {
+  color: var(--accent);
+}
+.abstract-content a:hover,
+.article-entry a:hover {
+  text-decoration-color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.abstract-title:hover {
+  color: var(--accent);
+}
+.index-post .abstract-read-more-button a:hover {
+  color: var(--accent);
+}
+
+/* 引用块左边线 */
+.abstract-content blockquote,
+.article-entry blockquote {
+  border-left-color: var(--accent);
+}
+
+/* 分页/导航 */
+.post-paginator .nextTitle:hover,
+.post-paginator .prevTitle:hover {
+  color: var(--accent);
+}
+
+/* 版权区链接 */
+.license-wrapper a,
+.copyright a {
+  color: var(--accent);
+}
+
+/* 目录 TOC */
+.toc-wrapper .toc-active {
+  color: var(--accent);
+}
+.toc-catalog:hover {
+  color: var(--accent);
+}
+.toc-wrapper a:hover {
+  color: var(--accent) !important; /* 主题该条带 !important，必须压过 */
+}
+.anchorjs-archer {
+  color: var(--accent);
+}
+
+/* 侧边栏（搜索/标签/标签页） */
+.site-search .search-icon {
+  color: var(--accent);
+}
+.sidebar-tag-name:hover,
+.sidebar-category-name:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.sidebar-label-focus {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.sidebar-tabs::after {
+  background-color: var(--accent);
+}
+
+/* 归档页 */
+.archive-year,
+.total-archive {
+  color: var(--accent);
+}
+.archive-post-item:hover,
+.meta-post-item:hover {
+  border-left-color: var(--accent);
+}
+
+/* 头部按钮/标题 hover */
+.header-actions .header-theme-btn:hover,
+.header-actions .home-link a:hover,
+header .banner .blog-title a:hover,
+.header-sidebar-menu-rounded:hover,
+.header-sidebar-menu-rounded.header-sidebar-menu-active {
+  color: var(--accent);
+}
+
+/* 阅读进度条（feature 色；需 _config.archer.yml 里 read_progress_color: feature 才显示） */
+.read-progress-feature {
+  background-color: var(--accent);
+}
+
+/* 友链页 / 弹出层 / 搜索 */
+.friends a:hover,
+.profile-link-item a:hover,
+.popup-btn-close,
+.algolia-hit-item-link em,
+.ais-Pagination-item a,
+.donate-popup__title {
+  color: var(--accent);
 }
