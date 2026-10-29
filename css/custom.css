@@ -1,0 +1,37 @@
+/* ==========================================
+   1. 文章详情页正文行距优化
+   ========================================== */
+.article-entry, 
+.post-content {
+  /* 行高：推荐 1.8 到 1.85，最适宜中文长文连续阅读 */
+  line-height: 1.85 !important;
+  font-size: 16px !important;
+  color: #2c3e50 !important;
+}
+
+/* 正文段落之间的下间距（防止多段文字挤成一团） */
+.article-entry p, 
+.post-content p {
+  margin-top: 0 !important;
+  margin-bottom: 1.4em !important;
+}
+
+/* 正文标题与上下正文的间距 */
+.article-entry h1, .article-entry h2, .article-entry h3 {
+  margin-top: 1.8em !important;
+  margin-bottom: 0.8em !important;
+  line-height: 1.4 !important;
+}
+
+/* ==========================================
+   2. 首页文章摘要列表行距优化
+   ========================================== */
+.post-excerpt,
+.post-abstract {
+  /* 摘要行高稍紧凑，保持卡片精致度 */
+  line-height: 1.75 !important;
+  font-size: 15px !important;
+  color: #555555 !important;
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
